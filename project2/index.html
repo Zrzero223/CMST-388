@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<head>
+    <title>Registration</title>
+</head>
+
+<body>
+
+    <form id="form" action="mailto:Zrzero223@aol.com" method="GET">
+
+        <div class="container">
+            
+            <div class="img">
+                <img src="img/logo.png" alt="Avatar" class="avatar">
+            </div><br>
+
+            <h1><b>Registration Form</b></h1>
+
+            <div class ="error" id="error"></div><br>
+
+            <div>
+                <label for="fname"><b>First Name:</b></label>
+                <input type="text" id="fname" name="fname" placeholder="Enter First Name">
+            </div><br>
+
+            <div>
+                <label for="lname"><b>Last Name:</b></label>
+                <input type="text" id="lname" name="fname" placeholder="Enter Last Name">
+            </div><br>
+
+            <div>
+                <label for="birth"><b>Date of Birth:</b></label>
+                <input type="date" id="birth" name="birth">
+            </div><br>
+
+            <div>
+                <label for="address"><b>Street Address:</b></label>
+                <input type="text" id="address" name="address" placeholder="Enter Street Address">
+            </div><br>
+
+            <div>
+                <label for="city"><b>City:</b></label>
+                <input type="text" id="city" name="city" placeholder="Enter City">
+            </div><br>
+
+            <div>
+                <label for="state"><b>Choose a State:</b></label>
+                <select id="state" name="state">
+                    <option value="Maryland">Maryland</option>
+                    <option value="NewYork">NewYork</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="Virginia">Virginia</option>
+                </select>
+            </div><br>
+
+            <div>
+                <label for="zip"><b>Zip Code:</b></label>
+                <input type="tel" id="zip" name="zip" maxlength="5" placeholder="Enter 5 digit Zip Code">
+            </div><br>
+
+            <div>
+                <label for="phone"><b>Phone Number:</b></label>
+                <input type="tel" id="area" name="area" maxlength="3" placeholder="Enter Area code">
+                <input type="tel" id="phone" name="phone" maxlength="7" placeholder="Enter Phone Number">
+            </div><br>
+
+            <div>
+                <label for="Email"><b>Email Address:</b></label>
+                <input type="email" id="email" name="email" placeholder="Enter Valid Email Address">
+            </div><br>
+            
+            <div>
+                <label for="conf"><b>Confirm Email:</b></label>
+                <input type="email" id="conf" name="conf" placeholder="Confirm Email">
+            </div><br>
+
+            <div>
+                <label for="meal"><b>Meal preference:</b></label><br>
+                
+                <label for="vegan">Vegan</label>
+                <input type="radio" id="vegan" name="meal" value="vegan"><br>
+
+                <label for="veg">Vegetarian</label>
+                <input type="radio" id="veg" name="meal" value="vegetarian"><br>
+
+                <label for="non">Non-Vegetarian</label>
+                <input type="radio" id="non" name="meal" value="Non-Vegetarian">
+            </div><br>
+
+            <div>
+                <label for="contact"><b>Method of Contact (Select Two):</b></label><br>
+                
+                <label for="phone">Phone</label>
+                <input type="checkbox" id="phone" name="phone" value="phone"><br>
+
+                <label for="email">Email</label>
+                <input type="checkbox" id="email" name="email" value="email"><br>
+
+                <label for="mail">Mail</label>
+                <input type="checkbox" id="mail" name="mail" value="mail"><br>
+
+                <label for="linkedin">Linkedin</label>
+                <input type="checkbox" id="linkedin" name="linkedin" value="linkedin">
+            </div><br>
+
+            <div>
+                <p><b>Comments:</b></p>
+                <textarea name="comments" rows="15" cols="30">Enter any comments here...</textarea>
+            </div><br>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div><br>
+
+            <div>
+                <button class="resetbtn" type="reset">Reset</button>
+            </div><br>
+
+        </div>
+        <script src="js/formValidation.js"></script>
+    </form>
+</body>
+</html>
